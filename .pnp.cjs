@@ -36,6 +36,8 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-hooks", "virtual:3c2e908dd7272dc6e5db32bb04126d358cc3c01e3f010d5762e30d2e1e4636d73f39c37b61b9d0601313a3d30463ab59f8d821dc9565a0c3bafe309887e39696#npm:4.6.0"],\
           ["eslint-plugin-react-refresh", "virtual:3c2e908dd7272dc6e5db32bb04126d358cc3c01e3f010d5762e30d2e1e4636d73f39c37b61b9d0601313a3d30463ab59f8d821dc9565a0c3bafe309887e39696#npm:0.4.6"],\
           ["postcss", "npm:8.4.35"],\
+          ["prop-types", "npm:15.8.1"],\
+          ["proptypes", "npm:1.1.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:3c2e908dd7272dc6e5db32bb04126d358cc3c01e3f010d5762e30d2e1e4636d73f39c37b61b9d0601313a3d30463ab59f8d821dc9565a0c3bafe309887e39696#npm:18.2.0"],\
           ["tailwindcss", "npm:3.4.1"],\
@@ -4038,6 +4040,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["proptypes", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/proptypes-npm-1.1.0-e7e72b942f-10c0.zip/node_modules/proptypes/",\
+        "packageDependencies": [\
+          ["proptypes", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["punycode", [\
       ["npm:2.3.1", {\
         "packageLocation": "../../../.yarn/berry/cache/punycode-npm-2.3.1-97543c420d-10c0.zip/node_modules/punycode/",\
@@ -4114,6 +4125,8 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-hooks", "virtual:3c2e908dd7272dc6e5db32bb04126d358cc3c01e3f010d5762e30d2e1e4636d73f39c37b61b9d0601313a3d30463ab59f8d821dc9565a0c3bafe309887e39696#npm:4.6.0"],\
           ["eslint-plugin-react-refresh", "virtual:3c2e908dd7272dc6e5db32bb04126d358cc3c01e3f010d5762e30d2e1e4636d73f39c37b61b9d0601313a3d30463ab59f8d821dc9565a0c3bafe309887e39696#npm:0.4.6"],\
           ["postcss", "npm:8.4.35"],\
+          ["prop-types", "npm:15.8.1"],\
+          ["proptypes", "npm:1.1.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:3c2e908dd7272dc6e5db32bb04126d358cc3c01e3f010d5762e30d2e1e4636d73f39c37b61b9d0601313a3d30463ab59f8d821dc9565a0c3bafe309887e39696#npm:18.2.0"],\
           ["tailwindcss", "npm:3.4.1"],\
