@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import Item from './Item';
+import PropsType from 'prop-types';
 
-const Items = () => {
+// eslint-disable-next-line react/prop-types
+const Items = ({handleToCook}) => {
     const [items, setItems] = useState([]);
 
     useEffect(()=>{
@@ -14,9 +16,13 @@ const Items = () => {
     return (
         <div className="items w-7/12 mx-auto grid grid-cols-2 gap-6">
             {
-                items.map((item,idx)=><Item item={item} key={idx}></Item>)
+                items.map((item,idx)=><Item item={item} key={idx} handleToCook={handleToCook}></Item>)
             }
         </div>
     );
 };
+
+Items.propsType = {
+    handleToCook: PropsType.func.isRequired
+}
 export default Items;

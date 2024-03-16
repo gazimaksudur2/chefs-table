@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Cooking = ({props}) => {
+const Cooking = ({handleToPrepare}) => {
     return (
         <div className='want-cook p-10 space-y-8 w-full text-center'>
             <h2 className='text-[#282828] w-[55%] mx-auto border-b-2 border-gray-400 pb-2 text-2xl font-semibold'>Currently Cooking: 02</h2>
@@ -58,7 +58,7 @@ const Cooking = ({props}) => {
 };
 
 Cooking.propTypes = {
-    
+    handleToPrepare: PropTypes.func
 };
 
 export default Cooking;

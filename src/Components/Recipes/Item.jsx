@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { CiClock2 } from "react-icons/ci";
 import { FaGripfire } from "react-icons/fa6";
 
-const Item = ({item}) => {
+const Item = ({item, handleToCook}) => {
     const {recipe_name, recipe_image, short_description: description, ingredients, preparing_time, calories} = item;
     return (
         <div className="items w-7/12 mx-auto grid grid-cols-2 gap-6">
@@ -34,7 +34,7 @@ const Item = ({item}) => {
                                 <p>{calories} calories</p>
                             </div>
                         </div>
-                        <button className="btn btn-primary bg-[#0BE58A] hover:bg-[#0BE58A70] text-[#150B2B] font-medium rounded-full">want to Cook</button>
+                        <button onClick={()=>handleToCook(item)} className="btn btn-primary bg-[#0BE58A] hover:bg-[#0BE58A70] text-[#150B2B] font-medium rounded-full">want to Cook</button>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,8 @@ const Item = ({item}) => {
 };
 
 Item.propTypes = {
-    item: PropTypes.object.isRequired
+    item: PropTypes.object.isRequired,
+    handleToCook: PropTypes.func.isRequired
 };
 
 export default Item;
