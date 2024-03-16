@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import CookItem from './CookItem';
 
-const Cooking = ({toPrepare}) => {
+const Cooking = ({toPrepare, handlePrepared}) => {
     let index = 0;
     const totalTime = toPrepare.reduce((accum,cur)=>{ return (parseInt(accum) + parseInt(cur.preparing_time))},0);
     const totalCalories = toPrepare.reduce((accum,cur)=>{return accum+=parseInt(cur.calories)},0);
@@ -21,7 +21,7 @@ const Cooking = ({toPrepare}) => {
                 </thead>
                 <tbody>
                     {
-                        toPrepare.map((item, idx)=><CookItem item={item} key={idx} status={'Preparing'} color={true} index={++index}></CookItem>)
+                        toPrepare.map((item, idx)=><CookItem item={item} handleToPrepare={handlePrepared} key={idx} status={'Preparing'} color={true} index={++index}></CookItem>)
                     }
                 </tbody>
             </table>
@@ -50,7 +50,7 @@ const Cooking = ({toPrepare}) => {
 };
 
 Cooking.propTypes = {
-    handleToPrepare: PropTypes.func,
+    handlePrepared: PropTypes.func,
     toPrepare: PropTypes.array
 };
 

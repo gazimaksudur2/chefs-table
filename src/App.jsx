@@ -8,7 +8,6 @@ import OurRecipes from "./Components/Banner/OurRecipes"
 import Navbar from "./Components/Navbar/Navbar"
 import Accounts from "./Components/Recipes/Accounts"
 import Items from "./Components/Recipes/Items"
-import ToastTest from './Components/Toaster/ToastTest'
 
 function App() {
   const [toCook, setToCook] = useState([]);
@@ -45,10 +44,6 @@ function App() {
         <Items handleToCook={handleToCook}></Items>
         <Accounts toCook={toCook} removeFromCook={removeFromCook} showToast={showToast}></Accounts>
       </div>
-      <h1 className="text-3xl font-bold underline text-primary text-center">
-      Hello world!
-      </h1>
-      <ToastTest></ToastTest>
       <ToastContainer />
     </>
   )

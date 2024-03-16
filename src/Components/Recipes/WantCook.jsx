@@ -23,14 +23,6 @@ const WantCook = ({toCook, handleToPrepare}) => {
                             toCook.map((item, idx)=><CookItem item={item} index={++index} color={false} key={idx} status={'pending'} handleToPrepare={handleToPrepare}></CookItem>)
                         }
                     </tbody>
-                        {/* <tbody>
-                        {data.map((item, index) => (
-                            <tr key={index}>
-                            <td>{index + 1}</td>
-                            <td>{item}</td>
-                            </tr>
-                        ))}
-                        </tbody> */}
                 </table>
             </div>
         </div>
