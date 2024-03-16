@@ -1,18 +1,39 @@
-import { useState } from "react"
 import PropsType from 'prop-types'
+import { useState } from "react"
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import Banner from "./Components/Banner/Banner"
 import OurRecipes from "./Components/Banner/OurRecipes"
 import Navbar from "./Components/Navbar/Navbar"
 import Accounts from "./Components/Recipes/Accounts"
 import Items from "./Components/Recipes/Items"
+import ToastTest from './Components/Toaster/ToastTest'
 
 function App() {
   const [toCook, setToCook] = useState([]);
 
   const handleToCook = (item)=>{
-    // console.log('cook is clicked --> '+item.recipe_id)
-    setToCook([...toCook, item]);
+    (toCook.find(element=>element===item)) && showToast(true, "Already Selected!!", 2000);
+    (toCook.find(element=>element===item)) || (setToCook([...toCook, item]));
+    // if((toCook.find(element=>element===item)){
+    //   setToCook([...toCook, item]);
+    //   showToast(true, "Selected ", 1500);
+    // }
   };
+
+  const showToast = (condition, message, time) => {
+      if (condition) {
+        toast.success(message, {
+          position: 'top-center',
+          autoClose: time
+        });
+      }
+    };
+
+  const removeFromCook = (item)=>{
+    setToCook(toCook.filter((element)=>element!==item));
+  }
   return (
     <>
       <div className="primary-cont my-10 max-w-[95%] mx-auto">
@@ -22,11 +43,13 @@ function App() {
       </div>
       <div className="recipes flex justify-center items-start gap-16 my-10 max-w-[90%] mx-auto">
         <Items handleToCook={handleToCook}></Items>
-        <Accounts toCook={toCook}></Accounts>
+        <Accounts toCook={toCook} removeFromCook={removeFromCook} showToast={showToast}></Accounts>
       </div>
       <h1 className="text-3xl font-bold underline text-primary text-center">
       Hello world!
       </h1>
+      <ToastTest></ToastTest>
+      <ToastContainer />
     </>
   )
 }

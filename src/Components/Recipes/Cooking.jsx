@@ -1,10 +1,11 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import CookItem from './CookItem';
 
-const Cooking = ({handleToPrepare}) => {
+const Cooking = ({toPrepare}) => {
+    let index = 0;
     return (
         <div className='want-cook p-10 space-y-8 w-full text-center'>
-            <h2 className='text-[#282828] w-[55%] mx-auto border-b-2 border-gray-400 pb-2 text-2xl font-semibold'>Currently Cooking: 02</h2>
+            <h2 className='text-[#282828] w-[55%] mx-auto border-b-2 border-gray-400 pb-2 text-2xl font-semibold'>Currently Cooking: {toPrepare.length}</h2>
             <div className="overflow-x-auto">
             <table className="table">
                 {/* head */}
@@ -18,6 +19,9 @@ const Cooking = ({handleToPrepare}) => {
                 </tr>
                 </thead>
                 <tbody>
+                    {
+                        toPrepare.map((item, idx)=><CookItem item={item} key={idx} status={'Preparing'} color={true} index={++index}></CookItem>)
+                    }
                 {/* row 1 */}
                 <tr className="hover">
                     <th>1</th>
@@ -58,7 +62,8 @@ const Cooking = ({handleToPrepare}) => {
 };
 
 Cooking.propTypes = {
-    handleToPrepare: PropTypes.func
+    handleToPrepare: PropTypes.func,
+    toPrepare: PropTypes.array
 };
 
 export default Cooking;
