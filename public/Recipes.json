@@ -1,0 +1,92 @@
+[
+    {
+      "recipe_id": "1",
+      "recipe_name": "Teriyaki Chicken",
+      "recipe_image": "https://i.ibb.co/vxjTfNp/biriyani.png",
+      "short_description": "Delicious teriyaki chicken made with soy sauce, garlic, and ginger.",
+      "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaf", "400 g mushroom"],
+      "preparing_time": "30",
+      "calories": "320"
+    },
+    {
+      "recipe_id": "2",
+      "recipe_name": "Spaghetti Carbonara",
+      "recipe_image": "https://i.ibb.co/mHRjw3y/vegetables.png",
+      "short_description": "Classic spaghetti carbonara made with eggs, pancetta, and Parmesan cheese.",
+      "ingredients": ["400 g spaghetti", "150 g pancetta", "3 eggs", "100 g Parmesan cheese"],
+      "preparing_time": "25",
+      "calories": "450"
+    },
+    {
+      "recipe_id": "3",
+      "recipe_name": "Mushroom Risotto",
+      "recipe_image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "short_description": "Creamy mushroom risotto cooked with Arborio rice and white wine.",
+      "ingredients": ["300 g Arborio rice", "500 g mushrooms", "1 onion", "200 ml white wine"],
+      "preparing_time": "40",
+      "calories": "380"
+    },
+    {
+      "recipe_id": "4",
+      "recipe_name": "Grilled Salmon",
+      "recipe_image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2053&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "short_description": "Healthy grilled salmon seasoned with lemon and herbs.",
+      "ingredients": ["4 salmon fillets", "1 lemon", "2 tbsp olive oil", "Salt and pepper to taste"],
+      "preparing_time": "20",
+      "calories": "290"
+    },
+    {
+      "recipe_id": "5",
+      "recipe_name": "Vegetable Stir-Fry",
+      "recipe_image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D",
+      "short_description": "Colorful vegetable stir-fry with a flavorful sauce.",
+      "ingredients": ["2 cups mixed vegetables", "200 g tofu", "3 tbsp soy sauce", "1 tbsp sesame oil"],
+      "preparing_time": "15",
+      "calories": "180"
+    },
+    {
+      "recipe_id": "6",
+      "recipe_name": "Margherita Pizza",
+      "recipe_image": "https://images.unsplash.com/photo-1561758033-563f9666b8c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmFzdCUyMGZvb2RzfGVufDB8fDB8fHww",
+      "short_description": "Classic Margherita pizza with tomato sauce, fresh mozzarella, and basil.",
+      "ingredients": ["1 pizza dough", "200 g mozzarella cheese", "1 cup tomato sauce", "Fresh basil leaves"],
+      "preparing_time": "30",
+      "calories": "320"
+    },
+    {
+      "recipe_id": "7",
+      "recipe_name": "Chicken Caesar Salad",
+      "recipe_image": "https://images.unsplash.com/photo-1593507369837-9adcc0c0bdc6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhc3QlMjBmb29kc3xlbnwwfHwwfHx8MA%3D%3D",
+      "short_description": "Healthy and delicious chicken Caesar salad with homemade dressing.",
+      "ingredients": ["300 g grilled chicken", "Romaine lettuce", "Croutons", "Parmesan cheese", "Caesar dressing"],
+      "preparing_time": "20",
+      "calories": "280"
+    },
+    {
+      "recipe_id": "8",
+      "recipe_name": "Beef Tacos",
+      "recipe_image": "https://images.unsplash.com/photo-1602192103300-47e66756152e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZhc3QlMjBmb29kc3xlbnwwfHwwfHx8MA%3D%3D",
+      "short_description": "Savory beef tacos with homemade salsa and guacamole.",
+      "ingredients": ["500 g ground beef", "Taco shells", "Tomatoes", "Onions", "Lettuce", "Guacamole"],
+      "preparing_time": "35",
+      "calories": "380"
+    },
+    {
+      "recipe_id": "9",
+      "recipe_name": "Pasta Primavera",
+      "recipe_image": "https://images.unsplash.com/photo-1517434324-1db605ff03c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZhc3QlMjBmb29kc3xlbnwwfHwwfHx8MA%3D%3D",
+      "short_description": "Light and colorful pasta primavera loaded with fresh vegetables.",
+      "ingredients": ["400 g pasta", "Assorted vegetables (bell peppers, carrots, zucchini, etc.)", "Olive oil", "Garlic", "Parmesan cheese"],
+      "preparing_time": "25",
+      "calories": "310"
+    },
+    {
+      "recipe_id": "10",
+      "recipe_name": "Chocolate Chip Cookies",
+      "recipe_image": "https://plus.unsplash.com/premium_photo-1667682942148-a0c98d1d70db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmFzdCUyMGZvb2RzfGVufDB8fDB8fHww",
+      "short_description": "Soft and chewy chocolate chip cookies made from scratch.",
+      "ingredients": ["2 cups all-purpose flour", "1 cup butter", "1 cup brown sugar", "1 cup chocolate chips", "1 tsp vanilla extract"],
+      "preparing_time": "15",
+      "calories": "160"
+    }
+]

@@ -1,8 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import './Banner.css'
 
-const Banner = props => {
+const Banner = () => {
     return (
         <div className='banner-cont relative my-10 h-[80vh] bg-img bg-cover rounded-3xl'>
             <div className="absolute inset-0 bg-gradient-to-t from-[#150B2Bad] to-[#150B2B10] rounded-3xl"></div>
@@ -18,8 +16,5 @@ const Banner = props => {
     );
 };
 
-Banner.propTypes = {
-    
-};
 
 export default Banner;
