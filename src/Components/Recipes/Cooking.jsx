@@ -38,8 +38,8 @@ const Cooking = ({toPrepare, handlePrepared}) => {
                     </thead>
                     <tbody>
                     <tr className="hover">
-                        <td>{totalTime}</td>
-                        <td>{totalCalories}</td>
+                        <td>{totalTime} minutes</td>
+                        <td>{totalCalories} calories</td>
                     </tr>
                     </tbody>
                 </table>
