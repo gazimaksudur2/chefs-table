@@ -1,3 +1,5 @@
+import { CiSearch } from "react-icons/ci";
+
 const Navbar = () => {
     return (
         <div className="nav-container font-lexend">
@@ -29,7 +31,11 @@ const Navbar = () => {
                 </div>
                 <div className="flex-none gap-2">
                     <div className="form-control hidden md:flex">
-                    <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+                        {/* <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" /> */}
+                        <div className="input bg-gray-100 px-4 py-2 rounded-xl input-bordered flex justify-center items-center gap-4">
+                            <CiSearch className="text-lg md:text-2xl"></CiSearch>
+                            <input type="text" placeholder="Search" className="p-2 bg-transparent focus:outline-none cursor-not-allowed text-sm md:text-xl"/>
+                        </div>
                     </div>
                     <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
@@ -47,8 +53,9 @@ const Navbar = () => {
                         <li><a>Settings</a></li>
                         <li><a>Logout</a></li>
                         <li>
-                            <div className="form-control my-4 md:hidden">
-                                <input type="text" placeholder="Search" className="input input-bordered w-full md:w-auto" />
+                            <div className="input bg-gray-100 my-3 mx-2 px-2 py-1 rounded-xl input-bordered flex justify-center items-center gap-4">
+                                <CiSearch className="text-sm"></CiSearch>
+                                <input type="text" placeholder="Search" className="p-1 w-full bg-transparent focus:outline-none cursor-not-allowed text-sm"/>
                             </div>
                         </li>
                     </ul>
