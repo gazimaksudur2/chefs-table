@@ -3,13 +3,13 @@ import { useState } from 'react';
 import Cooking from './Cooking';
 import WantCook from './WantCook';
 
-const Accounts = ({toCook, removeFromCook, showToast}) => {
+const Accounts = ({toCook, removeFromCook, showWarningToast}) => {
     const [toPrepare, setToPrepare] = useState([]);
 
     const handleToPrepare = (item)=>{
         // console.log("to prepare clicked"+item.recipe_id);
         // console.log(!(toPrepare.includes(item)))
-        (toPrepare.includes(item)) && (showToast(true, 'Already Cooking'));
+        (toPrepare.includes(item)) && (showWarningToast(true, 'Already Cooking'));
         (toPrepare.includes(item)) || setToPrepare([...toPrepare, item]);
         (toPrepare.includes(item)) || removeFromCook(item);
         // console.log(toPrepare);
@@ -30,7 +30,7 @@ const Accounts = ({toCook, removeFromCook, showToast}) => {
 Accounts.propTypes = {
     toCook: PropTypes.array,
     removeFromCook: PropTypes.func,
-    showToast: PropTypes.func
+    showWarningToast: PropTypes.func
 };
 
 export default Accounts;

@@ -13,15 +13,24 @@ function App() {
   const [toCook, setToCook] = useState([]);
 
   const handleToCook = (item)=>{
-    (toCook.find(element=>element===item)) && showToast(true, "Already Selected!!", 2000);
+    (toCook.find(element=>element===item)) && showErrorToast(true, "Already Selected!!", 2000);
     (toCook.find(element=>element===item)) || (setToCook([...toCook, item]));
     // if((toCook.find(element=>element===item)){
     //   setToCook([...toCook, item]);
-    //   showToast(true, "Selected ", 1500);
+    //   showErrorToast(true, "Selected ", 1500);
     // }
   };
 
-  const showToast = (condition, message, time) => {
+  const showErrorToast = (condition, message, time) => {
+      if (condition) {
+        toast.error(message, {
+          position: 'top-center',
+          autoClose: time
+        });
+      }
+    };
+
+    const showWarningToast = (condition, message, time) => {
       if (condition) {
         toast.warning(message, {
           position: 'top-center',
@@ -50,7 +59,7 @@ function App() {
       </div>
       <div className="recipes flex flex-col-reverse md:flex-row justify-center items-start gap-10 md:gap-16 my-10 w-[97%] md:max-w-[90%] mx-auto">
         <Items handleToCook={handleToCook} scrollToSection={scrollToSection}></Items>
-        <Accounts toCook={toCook} removeFromCook={removeFromCook} showToast={showToast}></Accounts>
+        <Accounts toCook={toCook} removeFromCook={removeFromCook} showWarningToast={showWarningToast}></Accounts>
       </div>
       <ToastContainer />
     </>
