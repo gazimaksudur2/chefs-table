@@ -54,7 +54,7 @@ const Navbar = () => {
                         <li><a>Logout</a></li>
                         <li>
                             <div className="input bg-gray-100 my-3 mx-2 px-2 py-1 rounded-xl input-bordered flex justify-center items-center gap-4">
-                                <CiSearch className="text-sm"></CiSearch>
+                                <CiSearch className="text-xl"></CiSearch>
                                 <input type="text" placeholder="Search" className="p-1 w-full bg-transparent focus:outline-none cursor-not-allowed text-sm"/>
                             </div>
                         </li>
