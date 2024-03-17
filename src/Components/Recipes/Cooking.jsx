@@ -6,8 +6,8 @@ const Cooking = ({toPrepare, handlePrepared}) => {
     const totalTime = toPrepare.reduce((accum,cur)=>{ return (parseInt(accum) + parseInt(cur.preparing_time))},0);
     const totalCalories = toPrepare.reduce((accum,cur)=>{return accum+=parseInt(cur.calories)},0);
     return (
-        <div className='want-cook p-10 space-y-8 w-full text-center'>
-            <h2 className='text-[#282828] w-[55%] mx-auto border-b-2 border-gray-400 pb-2 text-2xl font-semibold'>Currently Cooking: {toPrepare.length}</h2>
+        <div className='want-cook p-1 md:p-10 space-y-8 w-full text-center'>
+            <h2 className='text-[#282828] md:w-[55%] mx-auto border-b-2 border-gray-400 pb-2 text-2xl font-semibold'>Currently Cooking: {toPrepare.length}</h2>
             <div className="overflow-x-auto">
             <table className="table">
                 <thead>
@@ -26,7 +26,7 @@ const Cooking = ({toPrepare, handlePrepared}) => {
                 </tbody>
             </table>
 
-            <h2 className='text-[#282828] my-6 w-[55%] mx-auto border-b-2 border-gray-400 pb-2 text-2xl font-semibold'>Calculations</h2>
+            <h2 className='text-[#282828] my-6 md:w-[55%] mx-auto border-b-2 border-gray-400 pb-2 text-2xl font-semibold'>Calculations</h2>
             <div className="overflow-x-auto">
                 <table className="table text-center">
                     {/* head */}
