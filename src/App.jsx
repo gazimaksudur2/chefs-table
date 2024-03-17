@@ -48,7 +48,7 @@ function App() {
         <Banner></Banner>
         <OurRecipes></OurRecipes>
       </div>
-      <div className="recipes flex flex-col-reverse md:flex-row justify-center items-start gap-10 md:gap-16 my-10 max-w-[90%] mx-auto">
+      <div className="recipes flex flex-col-reverse md:flex-row justify-center items-start gap-10 md:gap-16 my-10 w-[97%] md:max-w-[90%] mx-auto">
         <Items handleToCook={handleToCook} scrollToSection={scrollToSection}></Items>
         <Accounts toCook={toCook} removeFromCook={removeFromCook} showToast={showToast}></Accounts>
       </div>
