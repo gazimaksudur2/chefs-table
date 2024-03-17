@@ -8,7 +8,7 @@ const Item = ({item, handleToCook}) => {
         <div className="items w-full md:w-7/12 mx-auto">
             <div className="card w-full md:w-96 bg-base-100 shadow-xl">
                 <figure className="px-10 pt-10">
-                    <img src={recipe_image} alt="RecipeImg" className="rounded-xl min-w-[95%] h-52 object-cover" />
+                    <img src={recipe_image} alt="RecipeImg" className="rounded-t-xl min-w-[95%] h-52 object-cover" />
                 </figure>
                 <div className="card-body items-start space-y-6 text-start">
                     <div className="title-description space-y-4">

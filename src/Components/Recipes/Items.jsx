@@ -20,6 +20,7 @@ const Items = ({handleToCook, scrollToSection}) => {
             setItems(data);
         });
     },[itemCountInfo]);
+    
     return (
         <div className="items w-full md:w-7/12 mx-auto grid md:grid-cols-2 grid-cols-1 gap-6">
             {

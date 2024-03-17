@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import CookItem from './CookItem';
 
 const WantCook = ({toCook, handleToPrepare}) => {
+    // console.log(toCook);
     let index = 0;
     return (
         <div className='want-cook p-1 md:p-10 space-y-8 w-full text-center'>
@@ -20,7 +21,7 @@ const WantCook = ({toCook, handleToPrepare}) => {
                     </thead>
                     <tbody>
                         {
-                            toCook.map((item, idx)=><CookItem item={item} index={++index} color={false} key={idx} status={'pending'} handleToPrepare={handleToPrepare}></CookItem>)
+                            toCook.map((item, idx)=><CookItem item={item} index={++index} color={false} key={idx} status={'pending'} handleTable={handleToPrepare}></CookItem>)
                         }
                     </tbody>
                 </table>
