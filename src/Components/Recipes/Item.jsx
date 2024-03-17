@@ -5,10 +5,10 @@ import { FaGripfire } from "react-icons/fa6";
 const Item = ({item, handleToCook}) => {
     const {recipe_name, recipe_image, short_description: description, ingredients, preparing_time, calories} = item;
     return (
-        <div className="items w-7/12 mx-auto grid grid-cols-2 gap-6">
-            <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="items w-full md:w-7/12 mx-auto">
+            <div className="card w-full md:w-96 bg-base-100 shadow-xl">
                 <figure className="px-10 pt-10">
-                    <img src={recipe_image} alt="RecipeImg" className="rounded-xl min-w-80 h-52 object-cover" />
+                    <img src={recipe_image} alt="RecipeImg" className="rounded-xl min-w-[95%] h-52 object-cover" />
                 </figure>
                 <div className="card-body items-start space-y-6 text-start">
                     <div className="title-description space-y-4">

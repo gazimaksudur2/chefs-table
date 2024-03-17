@@ -20,7 +20,7 @@ const Accounts = ({toCook, removeFromCook, showToast}) => {
     }
       
     return (
-        <div className="card accounts w-5/12 bg-base-100 shadow-2xl outline-2 outline-gray-400">
+        <div id='accounts' className="card accounts w-full md:w-5/12 bg-base-100 shadow-2xl outline-2 outline-gray-400">
             <WantCook toCook={toCook} handleToPrepare={handleToPrepare}></WantCook>
             <Cooking toPrepare={toPrepare} handlePrepared={handlePrepared}></Cooking>
         </div>

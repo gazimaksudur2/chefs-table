@@ -23,7 +23,7 @@ function App() {
 
   const showToast = (condition, message, time) => {
       if (condition) {
-        toast.success(message, {
+        toast.warning(message, {
           position: 'top-center',
           autoClose: time
         });
@@ -33,6 +33,14 @@ function App() {
   const removeFromCook = (item)=>{
     setToCook(toCook.filter((element)=>element!==item));
   }
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div className="primary-cont my-10 max-w-[95%] mx-auto">
@@ -40,8 +48,8 @@ function App() {
         <Banner></Banner>
         <OurRecipes></OurRecipes>
       </div>
-      <div className="recipes flex justify-center items-start gap-16 my-10 max-w-[90%] mx-auto">
-        <Items handleToCook={handleToCook}></Items>
+      <div className="recipes flex flex-col-reverse md:flex-row justify-center items-start gap-10 md:gap-16 my-10 max-w-[90%] mx-auto">
+        <Items handleToCook={handleToCook} scrollToSection={scrollToSection}></Items>
         <Accounts toCook={toCook} removeFromCook={removeFromCook} showToast={showToast}></Accounts>
       </div>
       <ToastContainer />
